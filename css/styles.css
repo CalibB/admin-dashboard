@@ -8,3 +8,24 @@ html {
     margin: 0;
     padding: 0;
 }
+
+/* Main layout styles */
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 20px;
+}
+
+.sidebar {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+header {
+    grid-area: 1 / 2 / 2 / 5;
+}
+
+main {
+    grid-area: 2 / 2 / 6 / 5;
+}
+
