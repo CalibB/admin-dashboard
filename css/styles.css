@@ -135,4 +135,91 @@ header .create-section .create__group > button {
     border-radius: 20px;
 }
 
+/* Main content styling */
+
+main {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    background-color: grey;
+    padding: 30px;
+    gap: 20px;
+}
+main .section-heading > h2 {
+    margin-bottom: 10px;
+}
+main .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(3, 200px);
+    gap: 30px;
+}
+main .projects .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-style: solid;
+    border-color: black;
+    padding: 20px 30px;
+}
+main .projects .project .text {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+main .projects .project > div {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+main .projects .project > div > img {
+    height: 20px;
+    width: 20px;
+}
+main .trending {
+    grid-column: 2 / 3;
+}
+
+.trending .profiles > img {
+    height: 50px;
+    width: 50px;
+    border-style: solid;
+    border-radius: 100%;
+}
+main .main__side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+main .main__side .announcements {
+    background-color: white;
+    padding: 15px;
+}
+main .main__side .announcements .announcement {
+    font-size: .9rem;
+}
+main .main__side .announcements .announcement > p {
+    padding-bottom: 10px;
+}
+main .main__side .announcements .announcement > h3 {
+    margin-top: 10px;
+}
+main .main__side .announcements .announcement:nth-child(1),
+main .main__side .announcements .announcement:nth-child(2) {
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 1px;
+}
+main .main__side .trending {
+    background-color: white;
+    padding: 15px;
+}
+main .main__side .trending .profiles {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: .9rem;
+    margin-bottom: 10px;
+}
+
+
 
