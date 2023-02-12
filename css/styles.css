@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
 html {
     box-sizing: border-box;
+    font-family: "Questrial", sans-serif;
 }
 
 *,
@@ -20,6 +23,8 @@ html {
 
 .sidebar {
     padding: 20px;
+    background-color: #000000;
+    color: #FB2576;
 }
 .sidebar .logo > img {
     height: 50px;
@@ -59,6 +64,8 @@ header {
     flex-direction: column;
     padding: 20px 30px;
     height: fit-content;
+    background-color: #3F0071;
+    color: #FB2576;
 }
 header .search {
     display: flex;
@@ -75,10 +82,11 @@ header .search label > input {
     height: 25px;
     width: 100%;
     border-style: solid;
-    border-color: black;
-    border-image: none;
+    border-color: #FB2576;
     border-radius: 20px;
     outline: none;
+    background-color: #000000;
+    color: #FB2576;
 }
 header .search label > img,
 header .search > div > img {
@@ -132,7 +140,10 @@ header .create-section .create__group > button {
     padding: 10px;
     border-style: solid;
     border-color: black;
+    background-color: #000000;
+    color: #FB2576;
     border-radius: 20px;
+    font-weight: bold;
 }
 
 /* Main content styling */
@@ -140,7 +151,7 @@ header .create-section .create__group > button {
 main {
     display: grid;
     grid-template-columns: 4fr 1fr;
-    background-color: grey;
+    background-color: #FB2576;
     padding: 30px;
     gap: 20px;
 }
@@ -158,8 +169,11 @@ main .projects .project {
     flex-direction: column;
     justify-content: space-between;
     border-style: solid;
-    border-color: black;
+    border-color: #3F0071;
+    border-radius: 10px;
     padding: 20px 30px;
+    background-color: #000000;
+    color: #FB2576;
 }
 main .projects .project .text {
     display: flex;
@@ -180,10 +194,22 @@ main .trending {
 }
 
 .trending .profiles > img {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     border-style: solid;
     border-radius: 100%;
+}
+.trending .profiles > img[alt="profile icon 1"] {
+    background-color: blue;
+}
+.trending .profiles > img[alt="profile icon 2"] {
+    background-color: white;
+}
+.trending .profiles > img[alt="profile icon 3"] {
+    background-color: orchid;
+}
+.trending .profiles > img[alt="profile icon 4"] {
+    background-color: yellow;
 }
 main .main__side {
     display: flex;
@@ -191,7 +217,8 @@ main .main__side {
     justify-content: space-between;
 }
 main .main__side .announcements {
-    background-color: white;
+    background-color: #3F0071;
+    color: #FB2576;
     padding: 15px;
 }
 main .main__side .announcements .announcement {
@@ -202,6 +229,7 @@ main .main__side .announcements .announcement > p {
 }
 main .main__side .announcements .announcement > h3 {
     margin-top: 10px;
+    margin-bottom: 5px;
 }
 main .main__side .announcements .announcement:nth-child(1),
 main .main__side .announcements .announcement:nth-child(2) {
@@ -210,7 +238,8 @@ main .main__side .announcements .announcement:nth-child(2) {
     border-bottom-width: 1px;
 }
 main .main__side .trending {
-    background-color: white;
+    background-color: #3F0071;
+    color: #FB2576;
     padding: 15px;
 }
 main .main__side .trending .profiles {
@@ -219,6 +248,13 @@ main .main__side .trending .profiles {
     gap: 10px;
     font-size: .9rem;
     margin-bottom: 10px;
+}
+
+main .main__side .announcements,
+main .main__side .trending {
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 10px;
 }
 
 
