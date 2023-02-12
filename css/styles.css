@@ -16,18 +16,6 @@ html {
     grid-template-columns: 1fr 4fr;
 }
 
-.sidebar {
-    grid-area: 1 / 1 / 2 / 2;
-}
-
-header {
-    grid-area: 1 / 2 / 2 / 5;
-}
-
-main {
-    grid-area: 2 / 2 / 6 / 5;
-}
-
 /* Sidebar styles */
 
 .sidebar {
@@ -64,5 +52,87 @@ main {
     margin-bottom: 15px;
 }
 
+/* Header styling */
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    height: fit-content;
+}
+header .search {
+    display: flex;
+    justify-content: space-between;
+}
+header .search label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 60%;
+}
+header .search label > input {
+    appearance: none;
+    height: 25px;
+    width: 100%;
+    border-style: solid;
+    border-color: black;
+    border-image: none;
+    border-radius: 20px;
+    outline: none;
+}
+header .search label > img,
+header .search > div > img {
+    height: 25px;
+    width: 25px;
+}
+header .search > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+header .search > div > img[alt="Profile icon"] {
+    height: 50px;
+    width: 50px;
+    border-style: solid;
+    border-color: purple;
+    border-radius: 100%;
+    background-color: yellow;
+    margin: 0 15px;
+}
+header .create-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+header .create-section .profileGreet {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 60%;
+}
+header .create-section .profileGreet > img {
+    height: 60px;
+    width: 60px;
+    border-style: solid;
+    border-color: purple;
+    border-radius: 100%;
+    background-color: yellow;
+}
+header .create-section .profileGreet > p {
+    font-weight: bold;
+}
+header .create-section .create__group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+header .create-section .create__group > button {
+    width: 90px;
+    padding: 10px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+}
 
 
