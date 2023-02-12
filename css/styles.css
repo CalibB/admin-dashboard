@@ -14,7 +14,6 @@ html {
 .dashboard {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    padding: 20px;
 }
 
 .sidebar {
@@ -28,4 +27,42 @@ header {
 main {
     grid-area: 2 / 2 / 6 / 5;
 }
+
+/* Sidebar styles */
+
+.sidebar {
+    padding: 20px;
+}
+.sidebar .logo > img {
+    height: 50px;
+    width: 50px;
+}
+.sidebar .logo > h1 {
+    padding-left: 5px;
+}
+.sidebar .logo,
+.sidebar nav .nav__main {
+    margin-bottom: 2rem;
+}
+.sidebar .logo,
+.sidebar nav .nav__main > div,
+.sidebar nav .nav__secondary > div {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+.sidebar nav .nav__main > div > img,
+.sidebar nav .nav__secondary > div > img {
+    height: 20px;
+    width: 20px;
+}
+.sidebar nav {
+    padding-left: 15px;
+}
+.sidebar nav .nav__main > div,
+.sidebar nav .nav__secondary > div {
+    margin-bottom: 15px;
+}
+
+
 
